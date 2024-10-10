@@ -83,7 +83,7 @@
 
     @media (max-width: 991px) {
         .navbar-nav {
-            background-color: rgba(44, 62, 80, 0.95);
+            background-color: rgb(39, 36, 42);
             padding: 20px;
             border-radius: 10px;
             margin-top: 10px; 
