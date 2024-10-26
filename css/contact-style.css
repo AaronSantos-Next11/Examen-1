@@ -77,7 +77,7 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-    @media (max-width: 991px) {
+    @media (width < 991px) {
         .navbar-nav {
             background-color: rgb(39, 36, 42);
             padding: 20px;
@@ -120,9 +120,14 @@ header {
 
 .main-container-form {
     display: flex;
-    padding: 0 0 20px;
+    padding: 0 20px 20px;
     justify-content: center;
     flex-direction: row; /* Por defecto, los elementos se alinean en fila */
+}
+
+.ifrm-map {
+    width: 600px;
+    height: 450px;
 }
 
 .buttons {
@@ -138,11 +143,12 @@ header {
     margin-right: 40px;
 }
 
-@media (max-width: 991px) {
+@media (width < 991px) {
+
     .main-container-form {
         flex-direction: column; /* Cambiamos a columna en pantallas pequeñas */
         align-items: center; /* Centramos los elementos */
-        padding: 20px; /* Añadimos espacio alrededor */
+        padding: 0 20px 20px; /* Añadimos espacio alrededor */
     }
 
     .section-form {
@@ -155,7 +161,18 @@ header {
         width: 100%; 
         margin-top: 20px; 
     }
-    
+
+    .content-ifrm-map {
+        display: flex;
+        padding: 0 20px;
+        max-width: 600px;
+        min-height: 100px;
+    }
+
+    .contact-info {
+        padding: 0 20px;
+    }
+
 }
 
 /*!--------------------------- Código del footer ------------------------------*/
